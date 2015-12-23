@@ -1,0 +1,102 @@
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #009D2E;
+	font-weight: 300;
+	background: linear-gradient(#0A142D, #009827) no-repeat;
+	height: 100%
+}
+
+.text-muted {
+	color: #BCBBBB
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+
+.title-super {
+	margin-top: 20px;
+	font-size: 40px;
+}
+
+.title-logo {
+	margin-top: 30px;
+	/* Centers logo when re-sized*/
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	width: 30%;
+	height: auto;
+	max-height: 100px
+}
+
+.colorContrast {
+	color: #0A142D;
+}
+
+/* suggested in 'Responsive Web Design Fundementals'
+	max-width on elements lesson, this is so the you
+	guarantee the size is relative instead of fixed */
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+img[data-sizes="auto"] {
+	display: block;
+}
+
+
+/* This is how to set up buttons so that they are big enough
+	to hit with fingers (AVG Finger size= 40 x 40px)
+	we use 48px to give a buffer
+	----
+	nav a, button {
+		min-width: 48px;
+		min-height: 48px;
+	}
+*/
+
+/* Layout Shifter Set-Up ... Might be able to customize bootstrap to set breakpoints, look into this*/
+
+@media only screen and (max-width:468px){
+	#mainPic {
+		width: 100vw;
+	}
+	.appPic {
+		width: 100vw;
+	}
+	#logo {
+		width: 100%;
+	}
+	#name {
+		width: 100%;
+	}
+}
+@media only screen and (min-width:469px){
+	#mainPic {
+		width: 100vw;
+	}
+	.appPic {
+		width: 33.33vw;
+	}
+}
+@media(min-width:768px){
+	.title-logo {
+		width: 40%;
+	}
+}
+@media(min-width:992px){
+	.title-logo {
+		width: 45%;
+	}
+}
+
+
+
+
+
+
+

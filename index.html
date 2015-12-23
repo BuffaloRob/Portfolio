@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rob's Portfolio</title>
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="titleBar">
+				<div class="col-xs-4 col-sm-3 col-md-2" id="logo">
+					<img class="title-logo img-responsive" src="images/Logov1.4.svg" alt="RJP Logo">
+				</div>
+				<div class="col-xs-8 col-sm-9 col-md-10 text-right text-uppercase" id="name">
+					<header class="title-super text-thin">Rob Peckham</header>
+					<h4>Front-End Dev</h4>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<hr> <!-- Thematic break -->
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-md-12">
+
+				<!-- -The 'w'(ie 800w) at the end of .jpg tells the browser the pic 		  width
+					 - The 'sizes' atrribute does not resize the image, that needs to be  done in CSS 
+					 -'sizes' attribute tells the browser how many pixels it needs, it does this by describing the final rendered width of the image -->
+				<img id="mainPic" 
+					sizes="(max-width:454px) 100vw, 66vw"
+					src="images/nLights-1-400_small.jpg"
+					srcset="images/nLights-1-800_1x.jpg 800w, 
+				    images/nLights-1-1200_2x.jpg 1200w,
+				    images/nLights-1-1600_3x.jpg 1600w"
+					alt="Main pic of northern lights" />
+
+				<!-- Use <picture> to provide alternative sources for images, the browser and/or device will use the first one if it can otherwise it'll move down the list until it finds one that's compatible. That's why an  <img> element is included, in case the browser doesn't support          <picture> 
+				<picure> is also good for art direction -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="colorContrast">Featured Work</h2>
+				</div>
+			</div> 
+			<div class="row text-center">
+				<div class="col-sm-6 col-md-4">
+					<img 
+					sizes="(max-width:454px) 100vw,
+					(max-width:767px) 75vw, 33.3vw"
+					src="images/nLights-2-400_small.jpg"
+					srcset="images/nLights-2-800_1x.jpg 800w, 
+				    images/nLights-2-1200_2x.jpg 1200w,
+				    images/nLights-2-1600_3x.jpg 1600w"
+					alt="Milkyway and northern lights" 
+					data-toggle="modal" 
+					data-target="#appify" />
+					<h3 class="text-uppercase colorContrast">Milkyway</h3>
+					<p class="colorContrast">https://github.com/udacity/Milkyway</p>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<img 
+					sizes="(max-width:454px) 100vw,
+					(max-width:767px) 75vw, 33.3vw"
+					src="images/sunrise-2-400_small.jpg"
+					srcset="images/sunrise-2-800_1x.jpg 800w, 
+				    images/sunrise-2-1200_2x.jpg 1200w,
+				    images/sunrise-2-1600_3x.jpg 1600w"
+				    alt="Sunrise with Studley" 
+				    data-toggle="modal" 
+				    data-target="#sunflower" />
+					<h3 class="text-uppercase colorContrast">Sunrise</h3>
+					<p class="colorContrast">https://github.com/udacity/sunrise</p>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<img 
+					sizes="(max-width:454px) 100vw,
+					(max-width:767px) 75vw, 33.3vw"
+					src="images/nLights-3-400_small.jpg"
+					srcset="images/nLights-3-800_1x.jpg 800w, 
+				    images/nLights-3-1200_2x.jpg 1200w,
+				    images/nLights-3-1600_3x.jpg 1600w"
+				    alt="Northern lights dome" />
+					<h3 class="text-uppercase colorContrast">Northern Lights</h3>
+					<p class="colorContrast">https://github.com/udacity/northernlights</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal #appify 
+		<div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" src="images/holder-9.jpg">
+		       Check this shit out
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>  -->
+
+		<!-- Modal #sunflower
+		<div class="modal fade" id="sunflower" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" src="images/holder-6.jpg">
+		        Pretty sweet, eh?
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div> -->
+	</body>
+</html>
